@@ -1,0 +1,378 @@
+html {
+
+		scroll-behavior: smooth;
+
+}
+
+body {
+	overflow-x: hidden;
+	background-image: url(./images/unnamed.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	/* outline: 0; */
+}
+
+h2 {
+	border-bottom: 1px solid;
+	font-size: 30px;
+	margin: 15px 0px;
+}
+
+.cv-header>* {
+	width: 50%;
+}
+
+.cv-header {
+	position: fixed;
+	background-color: #bdcfe3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.social-links .fas:hover {
+	color: white;
+}
+.fab:hover {
+	color: white;
+}
+
+.cv-logo img {
+	padding: 20px;
+	width: 30%;
+}
+
+.cv-card-info {
+	padding: 10px 0px;
+}
+
+.navbar-lists {
+
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.navbar-lists li {
+	border-radius: 5px;
+  padding: 5px;
+    text-align: center;
+    height: 30px;
+    background-color: white;
+}
+.navbar-lists a {
+	color: black;
+	padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.burger{
+	display: none;
+}
+.burger::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    /* content: "\f00d"; */
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+    font-weight: 900;
+   /* content: "<i class="fas fa-bars"></i>" */
+}
+
+/* ====MAIN===== */
+
+#container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.cv_image {
+	max-width: 100%;
+}
+
+.container-cv {
+	padding: 20px;
+	/* float: left; */
+	/* width: 20%; */
+}
+
+.cv-section {
+	margin-left: 35px;
+	background-color: darkcyan;
+	top: 0;
+	width: 20%;
+}
+
+.contain-fixed {
+	text-align: center;
+	position: fixed;
+	top: 120px;
+}
+
+.main-section {
+	display: grid;
+	grid-template-columns: 2fr;
+	float: right;
+	width: 70%;
+	margin: 110px 35px 0px 0px;
+
+}
+.languages {
+	margin:  10px 0px;
+}
+.card-cv-avatar {
+	transition: 0.5s;
+	border: 1px solid black;
+	padding: 30px;
+}
+
+.card-cv-avatar:hover {
+	padding: 0px;
+	/* transform: scale(1.3); */
+}
+
+.social-links {
+	padding: 10px 0px;
+}
+
+.social-links>ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+}
+.subtitle {
+	font-size: 20px;
+}
+.fab,
+.fas {
+	color: black;
+	font-size: 25px;
+	transition: 0.7s;
+}
+
+/* .fab:hover,
+.fas:hover {
+	color: rgb(255, 255, 255);
+} */
+
+.social-links ul li {
+	margin-left: 20px;
+}
+
+.download-cv {
+	
+	padding: 25px 0px;
+	width: 100%;
+	background-color: white;
+}
+
+.link-download {
+	border-radius: 25px;
+	text-decoration: none;
+	padding: 15px 40px;
+	background-color: black;
+	color: white;
+	
+}
+
+.section {
+	margin: 10px 0px;
+	padding: 20px;
+	background-color: white;
+}
+
+.about-section {
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.about-section>h1 {
+	border-bottom: 1px solid;
+	font-size: 30px;
+	margin: 15px 0px;
+}
+
+.text-cv {
+	padding: 10px 0px;
+	border-bottom: 1px solid black;
+}
+.text-cv a{
+	
+	text-decoration: none;
+	color: teal;
+	font-size: 20px;
+}
+.text-cv a:hover {
+	text-decoration: underline;
+}
+.personal-information {
+	justify-content: space-between;
+}
+
+.flex {
+	display: flex;
+}
+
+.contact-information {
+	padding: 10px;
+	width: 50%;
+}
+
+.languages-info {
+	padding: 10px;
+	width: 50%;
+}
+
+.info-contact>dt {
+	float: left;
+	width: 100px;
+	overflow: hidden;
+	clear: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	letter-spacing: .01em;
+	font-weight: 700;
+	font-size: 1em;
+}
+.info-contact>dd{
+margin: 10px 0px;
+}
+.info-contact>dd>a {
+	color: teal;
+	font-size: 20px;
+}
+.title-information {
+	color: #757575;
+	margin: 25px 0px;
+}
+
+.armenian,
+.russian,
+.english {
+	width: 100%;
+}
+
+
+/* ===EDUCATION=== */
+
+.education-section>h2 {
+	font-size: 30px;
+	margin: 15px 0px;
+}
+
+.education-title {
+	margin: 15px;
+}
+
+.contain-skills>h3,
+.certeficate-section>h3 {
+	border-radius: 10px;
+	font-size: 40px;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	background-color: cornflowerblue;
+}
+
+.proces {
+	float: right;
+}
+
+.skills-lists {
+	padding: 0px 20px 20px 20px;
+}
+
+.skill {
+	width: 100%;
+}
+
+.skill-tech {
+	margin: 20px 0;
+}
+
+.contain-skills .show-skills {
+	border-top: none;
+}
+
+.show-skills {
+	padding: 20px;
+	border: 1px solid black;
+}
+
+.show-certeficates {
+	padding: 0px 20px 20px 20px;
+}
+
+.show-certeficates .border-certeficate {
+	border-top: none;
+}
+
+.border-certeficate {
+	padding: 10px;
+	border: 1px solid;
+}
+
+.certeficate-files {
+	display: flex;
+}
+
+.img-cer {
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.size-image {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 1s;
+	padding: 2px;
+	width: 100%;
+}
+
+.size-image:hover {
+	transform: scale(1.1);
+}
+.office-logo {
+	border-right: 1px solid black;
+	text-align: center;
+	width: 20%;
+}
+.office-logo img {
+	width: 50%;
+}
+.work-date {
+	margin: 10px 0px;
+}
+.team-description {
+	display: flex;
+}
+.description {
+	margin: 0px 10px 10px 10px;
+}
+.info-team {
+	font-size: 16px;
+	color: rgb(110, 110, 110);
+	display: inline;
+}
+.page-info {
+	text-align: center;
+}
+/* =====FOOTER===== */
+.footer-section {
+	width: 100%;
+	background-color: red;
+}

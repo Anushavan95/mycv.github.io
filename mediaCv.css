@@ -1,0 +1,56 @@
+@media screen and (max-width: 1100px) {
+   .class {
+       position: relative;
+   }
+    .cv-nav-lists {
+        display: none;
+    }
+    .cv-logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+.cv-logo img {
+    width: 50%;
+}
+     .burger {
+         font-size: 50px;
+        display: block;
+    }
+    .contain-fixed {
+        position: static;
+    }
+    .cv-section {
+        width: 100%;
+        margin: 0;
+    }
+    .contain-fixed {
+        top: 82px;
+    }
+    .cv-card-info {
+        font-size: 30px;
+    }
+    .fab,
+    .fas  {
+        font-size: 3rem;
+    }
+    .download-cv {
+        padding: 40px 0px;
+    }
+   
+    .main-section {
+        width: 100%;
+        margin: 0;
+    }
+    .office-logo {
+        width: 50%;
+    }
+    .office-logo img {
+        width: 90%;
+    }
+    .link-download {
+        font-size: 25px;
+    }
+}
