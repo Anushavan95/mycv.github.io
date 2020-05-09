@@ -1,7 +1,5 @@
 html {
-
-		scroll-behavior: smooth;
-
+	scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +30,7 @@ h2 {
 }
 
 .cv-header {
+	z-index: 10;
 	position: fixed;
 	background-color: #bdcfe3;
 	display: flex;
@@ -44,13 +43,19 @@ h2 {
 .social-links .fas:hover {
 	color: white;
 }
+
 .fab:hover {
 	color: white;
 }
 
 .cv-logo img {
+	margin-left: 15px;
 	padding: 20px;
 	width: 30%;
+}
+
+.cv-nav-lists {
+	margin-right: 20px;
 }
 
 .cv-card-info {
@@ -58,38 +63,47 @@ h2 {
 }
 
 .navbar-lists {
-
 	display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	list-style: none;
 }
+
 .navbar-lists li {
+	transition: 1s;
 	border-radius: 5px;
-  padding: 5px;
-    text-align: center;
-    height: 30px;
-    background-color: white;
+	padding: 5px;
+	text-align: center;
+	height: 30px;
+	background-color: white;
 }
+
+.navbar-lists li:hover {
+	background-color: royalblue;
+}
+
 .navbar-lists a {
 	color: black;
 	padding: 5px;
-    text-decoration: none;
-    display: inline-block;
+	text-decoration: none;
+	display: inline-block;
 }
-.burger{
+
+.burger {
 	display: none;
 }
+
 .burger::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0c9";
-    /* content: "\f00d"; */
-    display: inline-block;
-    padding: 20px;
-    vertical-align: middle;
-    font-weight: 900;
-   /* content: "<i class="fas fa-bars"></i>" */
+	font-family: "Font Awesome 5 Free";
+	content: "\f0c9";
+	/* content: "\f00d"; */
+	display: inline-block;
+	padding: 20px;
+	vertical-align: middle;
+	font-weight: 900;
+	/* content: "<i class="fas fa-bars"></i>" */
 }
+
 
 /* ====MAIN===== */
 
@@ -127,11 +141,12 @@ h2 {
 	float: right;
 	width: 70%;
 	margin: 110px 35px 0px 0px;
+}
 
-}
 .languages {
-	margin:  10px 0px;
+	margin: 10px 0px;
 }
+
 .card-cv-avatar {
 	transition: 0.5s;
 	border: 1px solid black;
@@ -152,15 +167,18 @@ h2 {
 	list-style-type: none;
 	justify-content: center;
 }
+
 .subtitle {
 	font-size: 20px;
 }
+
 .fab,
 .fas {
 	color: black;
 	font-size: 25px;
 	transition: 0.7s;
 }
+
 
 /* .fab:hover,
 .fas:hover {
@@ -172,19 +190,22 @@ h2 {
 }
 
 .download-cv {
-	
 	padding: 25px 0px;
 	width: 100%;
 	background-color: white;
 }
 
 .link-download {
+	transition: 1s;
 	border-radius: 25px;
 	text-decoration: none;
 	padding: 15px 40px;
 	background-color: black;
 	color: white;
-	
+}
+
+.link-download:hover {
+	opacity: 0.5;
 }
 
 .section {
@@ -208,15 +229,17 @@ h2 {
 	padding: 10px 0px;
 	border-bottom: 1px solid black;
 }
-.text-cv a{
-	
+
+.text-cv a {
 	text-decoration: none;
 	color: teal;
 	font-size: 20px;
 }
+
 .text-cv a:hover {
 	text-decoration: underline;
 }
+
 .personal-information {
 	justify-content: space-between;
 }
@@ -246,13 +269,16 @@ h2 {
 	font-weight: 700;
 	font-size: 1em;
 }
-.info-contact>dd{
-margin: 10px 0px;
+
+.info-contact>dd {
+	margin: 10px 0px;
 }
+
 .info-contact>dd>a {
 	color: teal;
 	font-size: 20px;
 }
+
 .title-information {
 	color: #757575;
 	margin: 25px 0px;
@@ -346,32 +372,81 @@ margin: 10px 0px;
 .size-image:hover {
 	transform: scale(1.1);
 }
+
 .office-logo {
 	border-right: 1px solid black;
 	text-align: center;
 	width: 20%;
 }
+
 .office-logo img {
 	width: 50%;
 }
+
 .work-date {
 	margin: 10px 0px;
 }
+
 .team-description {
 	display: flex;
 }
+
 .description {
 	margin: 0px 10px 10px 10px;
 }
+
 .info-team {
 	font-size: 16px;
 	color: rgb(110, 110, 110);
 	display: inline;
 }
+
 .page-info {
 	text-align: center;
 }
+
+
+/* =====PORTFOLIO */
+
+.portfolio-list {
+	position: relative;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.bn-systems-site {
+	transition: 1s;
+	border-radius: 10px;
+	margin: 20px 0px;
+	padding: 10px;
+	border: 1px solid;
+}
+
+.typing-game {
+	transition: 1s;
+	margin: 10px 0px;
+	padding: 20px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.bn-systems-site img,
+.typing-game img {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.bn-systems-site:hover {
+	opacity: 0.5;
+}
+
+.typing-game:hover {
+	opacity: 0.5;
+}
+
+
 /* =====FOOTER===== */
+
 .footer-section {
 	width: 100%;
 	background-color: red;
