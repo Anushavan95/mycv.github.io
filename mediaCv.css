@@ -17,13 +17,17 @@
 		position: absolute;
 		right: 0;
 		transform: translateX(100%);
-		transition: 2.5s;
+		transition: 2.5s all ease;
 		width: 100%;
 	}
 	.navbar-lists {
 		display: block;
 		align-items: center;
 		text-align: center;
+	}
+	.navbar-lists li {
+		border-radius: 0;
+		border-bottom: 2px solid black;
 	}
 	.navbar-lists .icon {
 		font-size: 1.5rem;
@@ -70,6 +74,6 @@
 
 .nav-active {
 	right: 0;
-	transition: 1s;
+	transition: 1s all ease;
 	transform: translateX(0%);
 }

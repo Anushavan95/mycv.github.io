@@ -422,6 +422,13 @@ h2 {
 	border: 1px solid;
 }
 
+.todo-list {
+	transition: 1s;
+	border-radius: 10px;
+	margin: 20px 0px;
+	padding: 10px;
+	border: 1px solid;
+}
 .typing-game {
 	transition: 1s;
 	margin: 10px 0px;
@@ -431,7 +438,8 @@ h2 {
 }
 
 .bn-systems-site img,
-.typing-game img {
+.typing-game img,
+.todo-list img {
 	border-radius: 10px;
 	width: 100%;
 }
@@ -444,6 +452,9 @@ h2 {
 	opacity: 0.5;
 }
 
+.todo-list:hover {
+	opacity: 0.5;
+}
 
 /* =====FOOTER===== */
 
